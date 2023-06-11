@@ -243,7 +243,7 @@ function mostrarTablaPosiciones() {
   if (tablaPosiciones && tablaPosiciones.length > 0) {
   tablaPosiciones.forEach((usuario, index) => {
   const liElement = document.createElement('li');
-  let cadena = `${index + 1}.  ${usuario.nombre} - Tiempo: ${usuario.tiempo}`
+  let cadena = `${index + 1}.  ${usuario.nombre} - Tiempo: ${usuario.tiempo}s`
   liElement.textContent = cadena;
   liElement.className += "liposicion"
   olElement.appendChild(liElement);
